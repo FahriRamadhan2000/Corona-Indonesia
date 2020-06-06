@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+            <link rel="manifest" href="/manifest.json">
+                <title>FR-Covid19 Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <section class="header">
+            <div class="container bg-info fixed-top m-auto px-3 py-2">
+                <div class="row pb-2 pt-1">
+                    <div class="backButton col m-auto position-absolute pt-1">
+                        <a href="indonesia.html">
+                            <img src="images/icons/back.svg" width="30">
+                        </a>
+                    </div>
+                    <div class="col"></div>
+                    <h3 class="text-white my-0">Info Corona</h3>
+                    <div class="col"></div>
+                </div>
+            </div>
+        </section>
+        <section id="info">
+            <div class="box">
+                <h5>Provinsi</h5>
+                <div class="row d-flex mb-0">
+                    <div class="col text-center">
+                        <img src="images/icons/disease.svg" alt="Kasus" height="50" title="Kasus positif">
+                        <p><b>0</b></p>
+                    </div>
+                    <div class="col text-center">
+                        <img src="images/icons/recover.svg" alt="Kasus" height="50" title="sembuh">
+                        <p><b>0</b></p>
+                    </div>
+                    <div class="col text-center">
+                        <img src="images/icons/death.svg" alt="Kasus" height="50" title="meninggal">
+                        <p><b>0</b></p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="container bg-info fixed-bottom m-auto py-0 px-3 pt-3">
+                <div class="search input-group mb-3">
+                    <input type="text" class="inputProvinsi form-control" placeholder="Cari Provinsi .....">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="button">
+                          <img src="images/icons/search.svg" width="20">
+                      </button>
+                    </div>
+                  </div>
+            </div>
+        </section>
+    </div>
+    <script src="main.js"></script>
+        <script src="js/getProvinsi.js"></script>
+</body>
+</html>

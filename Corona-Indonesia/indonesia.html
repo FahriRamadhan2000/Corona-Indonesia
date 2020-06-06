@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+            <link rel="manifest" href="manifest.json">
+                <title>FR-Covid19 Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <section class="header">
+            <div class="container bg-info fixed-top m-auto px-3 py-2">
+                <div class="row pb-2 pt-1">
+                    <div class="col">
+                    </div>
+                    <h3 class="text-white my-0">Info Corona</h3>
+                    <div class="col"></div>
+                </div>
+            </div>
+        </section>
+        <section id="info">
+            <div class="row mb-3">
+                <div class="col text-center">
+                    <img class=" " src="images/icons/location.svg" alt="Earth" width="100">
+                    <h3 class=" ">Indonesia</h3>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col" >
+                    <div class="bg-info p-2 clearfix">
+                        <img class="" src="images/icons/disease.svg" width="60">
+                        <span class="kasusNaik text-white ml-1"></span>
+                        <div class="float-right text-white" style="width: 5rem;">
+                            <h4 id="kasus">0</h4>
+                            <p>Kasus</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col">
+                    <div class="bg-success p-2 clearfix" style="width: 100%;">
+                        <img class="" src="images/icons/recover.svg" width="60">
+                        <span class="sembuhNaik text-white ml-1"></span>
+                        <div class="float-right text-white" style="width: 5rem;">
+                            <h4 id="sembuh">0</h4>
+                            <p>Sembuh</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col">
+                    <div class="bg-warning p-2 clearfix" style="width: 100%;">
+                        <img class="" src="images/icons/dirawat.svg" width="60">
+                        <span class="dirawatNaik text-white ml-1"></span>
+                        <div class="float-right text-white" style="width: 5rem;">
+                            <h4 id="dirawat">0</h4>
+                            <p>dirawat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="bg-danger p-2 clearfix" style="width: 100%;">
+                        <img class="" src="images/icons/death.svg" width="60">
+                        <span class="meninggalNaik text-white ml-1"></span>
+                        <div class="float-right text-white" style="width: 5rem;">
+                            <h4 id="meninggal">0</h4>
+                            <p style="font-size: 14px;"> Meninggal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="mt-5"></div>
+        <section class="footer">
+            <a class="container bg-info fixed-bottom py-3 text-auto text-white" href="provinsi.html"
+                style="text-decoration: none;">
+                <h4 class="text-center mb-0">Cek Per Provinsi</h4>
+            </a>
+        </section>
+    </div>
+    <script>
+    </script>
+    <script src="main.js"></script>
+    <script src="js/getIndonesia.js"></script>
+</body>
+</html>

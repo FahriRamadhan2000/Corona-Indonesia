@@ -1,0 +1,41 @@
+p{
+    margin-bottom: 0;
+}
+
+.lingkaran {
+    -webkit-box-shadow: 0px 0px 20px 2px rgba(84, 7, 84, 1);
+    -moz-box-shadow: 0px 0px 20px 2px rgba(84, 7, 84, 1);
+    box-shadow: 0px 0px 20px 2px rgba(84, 7, 84, 1);
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+@keyframes example {
+    25% {
+        -webkit-box-shadow: 0px 0px 35px 8px rgba(94, 9, 9, 1);
+        -moz-box-shadow: 0px 0px 35px 8px rgba(94, 9, 9, 1);
+        box-shadow: 0px 0px 35px 8px rgba(94, 9, 9, 1);
+    }
+
+    50% {
+        -webkit-box-shadow: 0px 0px 50px 15px rgba(94, 9, 9, 1);
+        -moz-box-shadow: 0px 0px 50px 15px rgba(94, 9, 9, 1);
+        box-shadow: 0px 0px 50px 15px rgba(94, 9, 9, 1);
+    }
+
+    75% {
+        -webkit-box-shadow: 0px 0px 35px 8px rgba(84, 7, 84, 1);
+        -moz-box-shadow: 0px 0px 35px 8px rgba(84, 7, 84, 1);
+        box-shadow: 0px 0px 35px 8px rgba(84, 7, 84, 1);
+    }
+}
+
+.backButton{
+    z-index: 1;
+}
+
+#info{
+    padding: 70px 0;
+}
+
+
