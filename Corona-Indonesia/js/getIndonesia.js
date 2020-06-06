@@ -23,6 +23,7 @@ function getData(url) {
 function updateNaik(kawalcorona, covid19) {
     if (covid19 !== undefined) {
         for (let i = 1; i < 3; i++) {
+            const update = covid19[covid19.length-i].Date.split('T')[0].split('-').reverse().join('-');
             const kasus1 = parseInt((kawalcorona[0].positif).replace(',', ''));
             const kasus2 = parseInt(covid19[covid19.length - i].Confirmed);
             const sembuh1 = parseInt((kawalcorona[0].sembuh).replace(',', ''));
@@ -41,6 +42,7 @@ function updateNaik(kawalcorona, covid19) {
                 if (dirawatNaik >= 0) { document.querySelector('.dirawatNaik').innerHTML = '+' + dirawatNaik; }
                 else { document.querySelector('.dirawatNaik').innerHTML = dirawatNaik; }
                 document.querySelector('.meninggalNaik').innerHTML = '+' + meninggalNaik;
+                document.querySelector('.update').innerHTML = 'Diupdate: '+ update;
                 break;
             }
         }
