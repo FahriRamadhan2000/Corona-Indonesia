@@ -9,8 +9,9 @@ var urlsToCache = [
     '/provinsi.html',
     '/css/style.css',
     '/css/bootstrap.css',
-    '/images/icons/back.svg'
-
+    '/images/icons/back.svg',
+    '/js/getIndonesia.js',
+    '/js/getProvinsi.js'
 ];
 
 //otomatis install service worker di browser
